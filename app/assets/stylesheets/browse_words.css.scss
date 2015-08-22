@@ -71,7 +71,7 @@ body{
 #history, .showWord, .delete i{
 	cursor: pointer;
 }
-.share-0{
+.sharer-0{
 	padding-left: 7px;
 }
 .siteInfo{
@@ -104,6 +104,12 @@ body{
 .btn-group{
 	margin-bottom: 15px;
 }
+@media screen and (max-width: 650px){
+	.btn-group label {
+    	font-size: 17px !important;
+    	padding: 4px !important;
+	}
+}
 @media screen and (max-width: 500px){
 	.nav-brand.h3 > div, .siteInfo{
 		text-align: center;
@@ -122,5 +128,14 @@ body{
 	.siteInfo{
 		width: 100%;
 		float: none;
+	}
+}
+@media screen and (max-width: 400px){
+	.btn-group label {
+    	font-size: 14px !important;
+    	padding: 2px !important;
+	}
+	.btn-group{
+		margin-top: 20px;
 	}
 }
