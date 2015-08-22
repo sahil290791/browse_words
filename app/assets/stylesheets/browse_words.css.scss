@@ -1,0 +1,126 @@
+// Place all the styles related to the browse_words controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body{
+	height: 100vh;
+	font-family: 'Roboto', sans-serif;
+}
+.nav-header {
+    // background: none repeat scroll 0 0 #ffab00;
+    background: none repeat scroll 0 0 rgb(255, 142, 17);  
+    height: 100px;
+    margin-top: 0;
+    padding-left: 14px;
+    padding-top: 1px;
+    width: 100%;
+}
+.showResults{
+	height: 545px;
+}
+.searchResult{
+ 	height: 400px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.nav-brand.h3{
+	font-size: 23px;
+	float: left;
+	width: 100%;
+	div{
+		display: inline-block;
+	}
+	div:first-child{
+		padding-left: 10px;
+		p small{
+			color: #fff;
+		}
+	}
+}
+.paddingReset{
+	padding-left:0;
+	padding-right:0;
+}
+.margin-top-md{
+	margin-top: 10px;
+}
+.margin-top-sm{
+	margin-top: 5px;
+}
+#wordSearch{
+	height: 50px;
+	font-size: 20px;
+}
+.siteInfo > p{
+	color: #333;
+	padding-right: 8px;
+	font-size: 15px;
+}
+.options{
+	display: inline-block;
+}
+.description{
+	font-size:16px;
+}
+.showResults .help-block{
+	font-style: italic;
+}
+.bookmarked > i{
+	color: #FF8E11;
+}
+#history, .showWord, .delete i{
+	cursor: pointer;
+}
+.share-0{
+	padding-left: 7px;
+}
+.siteInfo{
+	float: right;
+	text-align: right;
+}
+.notification-alert{
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	text-align: center;
+	color: #fff;
+	border-radius: 0;
+	font-size: 18px;
+}
+.success-notification{
+	background:#449D44;
+}
+.danger-notification{
+	background: #C9302C;
+}
+.warning-notification{
+	background: #EC971F;
+}
+.modal-body .list-group{
+	margin-bottom: 0;
+}
+.btn-group{
+	margin-bottom: 15px;
+}
+@media screen and (max-width: 500px){
+	.nav-brand.h3 > div, .siteInfo{
+		text-align: center;
+	}
+	.nav-brand.h3{
+		float: none;
+		margin-top: 5px;
+		div{
+			width: 100%;
+		}
+	}
+	.siteInfo p {
+		display: inline-block;
+
+	}
+	.siteInfo{
+		width: 100%;
+		float: none;
+	}
+}

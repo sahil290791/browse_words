@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset='utf-8' />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <%#= wicked_pdf_stylesheet_link_tag "pdf" -%>
+    <%#= wicked_pdf_javascript_include_tag "number_pages" %>
+  </head>
+  <body onload='number_pages'>
+    <div id="header">
+    	<h4>Bookmarked Words</h4>
+	      <ul class="list-group">
+	      		<% @bookmarks.each do |bookmark| %>
+	      			<li class="list-group-item">
+		      			<strong><%= bookmark.word %> <a href="<%= bookmark.audio_url %>">Audio link</a></strong>
+						<p><%= bookmark.description %></p>
+					</li>	      			
+	      		<% end %>		
+	      </ul>
+    </div>
+  </body>
+</html>

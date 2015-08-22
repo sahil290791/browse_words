@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>BrowseWords</title>
+		
+		<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+		<%= csrf_meta_tags %>
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+	  	<link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
+	  	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+	  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	  	<%= stylesheet_link_tag 'share.min.css' %>
+
+	 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	    <!--[if lt IE 9]>
+	      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	    <![endif]-->
+	</head>
+	<body>
+
+		<div class="nav-header paddingReset">
+			<div class="nav-brand h3">
+				<div class="">
+					LetsVenture Dictionary <p><small>An advance, feature rich online vocabulary builder</small></p>
+				</div>
+				<div class="siteInfo">
+					<p><strong>API Hits:</strong> <span id="hitCount">918</span> </p>
+					<p><strong>Bookmarked words:</strong> <span id="bookmarkCount">0</span> </p>
+				</div>
+			</div>
+		</div>
+	    <div class="container-fluid">
+			<%= yield %>
+		</div>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.2/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nanoscroller/0.8.7/javascripts/jquery.nanoscroller.js"></script>
+		<%= javascript_include_tag "fastFilter.js" %>
+		<%= javascript_include_tag "words.js" %>
+		<%= javascript_include_tag "share.min.js" %>
+	</body>
+</html>
+
+
