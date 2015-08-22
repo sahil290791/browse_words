@@ -30,6 +30,11 @@ gem 'social-share-button', '~> 0.1.6'
 gem 'wicked_pdf'
 gem 'wkhtmltopdf-binary'
 
+group :production do
+	gem 'pg'
+	gem 'rails_12factor'
+	gem 'puma'
+end
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
