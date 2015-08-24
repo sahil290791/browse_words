@@ -5,7 +5,7 @@ source 'https://rubygems.org'
 gem 'rails', '4.1.4'
 # Use mysql as the database for Active Record
 group :development, :test do
-  gem 'mysql2', '>= 0.3'
+  gem 'mysql2', '~> 0.3.14'
 end
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
@@ -28,7 +28,6 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
 gem 'spring',        group: :development
 
-gem 'social-share-button', '~> 0.1.6'
 gem 'wicked_pdf'
 gem 'wkhtmltopdf-binary'
 

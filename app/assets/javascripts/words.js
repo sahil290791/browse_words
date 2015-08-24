@@ -235,7 +235,7 @@
 	    	$('.bookmarked').addClass('bookmark');
 	    	$('.bookmark').removeClass('bookmarked');
 	    	$('.bookmark i').addClass('fa-star-o').removeClass('fa-star');
-	    	$('#history').trigger('click');
+	    	$('button[aria-label="Close"]').trigger('click');
 	    	$('.social-share-button').attr('data-title',word);
 	    	check_if_bookmarked(word);
 		});
