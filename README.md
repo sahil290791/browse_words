@@ -1,4 +1,4 @@
-== Browse Words
+##Browse Words
 
 A small fully responsive app with a new design to browse words, see their meanings, bookmark them, update bookmark list and finally download the bookmarked words.
 
