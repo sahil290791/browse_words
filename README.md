@@ -1,8 +1,8 @@
-##Browse Words
+## Browse Words
 
 A small fully responsive app with a new design to browse words, see their meanings, bookmark them, update bookmark list and finally download the bookmarked words.
 
-###Screenshots
+### Screenshots
 
 <img src="/ScreenShots/home_screen.png" alt="Screen 1" style="width:50%;"/>
 <br/>
